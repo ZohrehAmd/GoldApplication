@@ -1,0 +1,221 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GoldApplication.WebAPI</name>
+    </assembly>
+    <members>
+        <member name="M:GoldApplication.WebAPI.Controllers.AccountController.Login(GoldApplication.WebAPI.Dtos.User.LoginUserDto)">
+            <summary>
+            ورود
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+            
+        </member>
+        <member name="M:GoldApplication.WebAPI.Controllers.AccountController.Register(GoldApplication.WebAPI.Dtos.User.RegisterUserDto)">
+            <summary>
+            ثبت نام
+            </summary>
+            <param name="register"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldApplication.WebAPI.Controllers.EventController.GetAllEvent">
+            <summary>
+            دریافت همه ی معاملات (Admin)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GoldApplication.WebAPI.Controllers.EventController.GetEventForProduct(System.Int64)">
+            <summary>
+            دریافت معاملات یک محصول (Admin)
+            </summary>
+            <param name="productId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldApplication.WebAPI.Controllers.EventController.GetEventById(System.Int64)">
+            <summary>
+            دریافت معامله با آی دی 
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldApplication.WebAPI.Controllers.EventController.Create(GoldApplication.WebAPI.Dtos.EventCreateDto)">
+            <summary>
+            افزودن معامله (Admin)
+            </summary>
+            <param name="createEvent"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldApplication.WebAPI.Controllers.EventController.UpdateEvent(System.Int64,GoldApplication.WebAPI.Dtos.EventUpdateDto)">
+            <summary>
+            ویرایش معامله (Admin)
+            </summary>
+            <param name="EventId"></param>
+            <param name="eventUpdate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldApplication.WebAPI.Controllers.EventController.ActiveEvent(System.Int64)">
+            <summary>
+            فعال و غیر فعال کردن معامله (Admin)
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldApplication.WebAPI.Controllers.ProductController.GetAll">
+            <summary>
+            دریافت همه محصولات
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GoldApplication.WebAPI.Controllers.ProductController.GetById(System.Int64)">
+            <summary>
+            دریافت محصول با ای دی
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldApplication.WebAPI.Controllers.ProductController.Create(GoldApplication.WebAPI.Dtos.ProductDto)">
+            <summary>
+            افزودن محصول (Admin)
+            </summary>
+            <param name="createproduct"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldApplication.WebAPI.Controllers.ProductController.Update(System.Int64,GoldApplication.WebAPI.Dtos.ProductDto)">
+            <summary>
+            ویرایش محصول (Admin)
+            </summary>
+            <param name="id"></param>
+            <param name="update"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldApplication.WebAPI.Controllers.ProductController.ActiveProduct(System.Int64)">
+            <summary>
+            فعال و غیر فعال کردن محصول (Admin)
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldApplication.WebAPI.Controllers.ProductUserController.GetAllUserForProduct(System.Int64)">
+            <summary>
+            دریافت خریداران یک محصول (Admin)
+            </summary>
+            <param name="productId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldApplication.WebAPI.Controllers.ProductUserController.GetAllProductForUser(System.Int64)">
+            <summary>
+            دریافت محصولات یک خریدار
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldApplication.WebAPI.Controllers.ProductUserController.GetProductUserForUser(System.Int64,System.Int64)">
+            <summary>
+            دریافت حد  خرید کاربر از محصول 
+            </summary>
+            <param name="userId"></param>
+            <param name="productId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldApplication.WebAPI.Controllers.ProductUserController.CreateUserProduct(GoldApplication.WebAPI.Dtos.Product.CreateUserProductDto)">
+            <summary>
+            افزودن کاربر به محصول (Admin)
+            </summary>
+            <param name="create"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldApplication.WebAPI.Controllers.ProductUserController.UpdateUserProduct(System.Int64,GoldApplication.WebAPI.Dtos.Product.ProductUserDto)">
+            <summary>
+            ویرایش مقدار خرید کاربر از محصول (Admin)
+            </summary>
+            <param name="productUserId"></param>
+            <param name="update"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldApplication.WebAPI.Controllers.ProductUserController.DeleteProductUser(System.Int64)">
+            <summary>
+            حذف کاربر از محصول (Admin)
+            </summary> 
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldApplication.WebAPI.Controllers.UserController.GetUsers">
+            <summary>
+            دریافت لیست کاربران (Admin)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GoldApplication.WebAPI.Controllers.UserController.GetUser(System.Int64)">
+            <summary>
+            دریافت کاربر با آی دی (Admin)
+            </summary>
+            <param name="id">آی دی کاربر</param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldApplication.WebAPI.Controllers.UserController.CreateUser(GoldApplication.WebAPI.Dtos.User.CreateUserDto)">
+            <summary>
+            ثبت کاربر جدید (Admin)
+            </summary>
+            <param name="createUserDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldApplication.WebAPI.Controllers.UserController.UpdateUser(System.Int64,GoldApplication.WebAPI.Dtos.UserDto)">
+            <summary>
+            ویرایش کاربر (Admin)
+            </summary>
+            <param name="id"></param>
+            <param name="updateUserDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldApplication.WebAPI.Controllers.UserController.ActiveUser(System.Int64)">
+            <summary>
+            فعال و غیر فعال کردن کاربر (Admin)
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldApplication.WebAPI.Controllers.UserEventController.GetAllUsersSellForEvent(System.Int64)">
+            <summary>
+            دریافت خریداران معامله
+            </summary>
+            <param name="eventId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldApplication.WebAPI.Controllers.UserEventController.GetAllEventsSellForUserByAdmin(System.Int64)">
+            <summary>
+            دریافت معاملات یک خریدار توسط ادمین
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldApplication.WebAPI.Controllers.UserEventController.GetAllEventsSellForUserByUser">
+            <summary>
+             دریافت معاملات یک خریدار توسط کاربر
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GoldApplication.WebAPI.Controllers.UserEventController.CreateUserEventByUser(GoldApplication.WebAPI.Dtos.UserEvent.CreateUserEventByUserDto)">
+            <summary>
+            خرید در معامله توسط کاربر
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldApplication.WebAPI.Controllers.UserEventController.UpdateUserEventByUser(System.Int64,GoldApplication.WebAPI.Dtos.UserEvent.UpdateUserEventDto)">
+            <summary>
+            ویرایش خرید توسط کاربر
+            </summary>
+            <param name="eventUserId"></param>
+            <param name="update"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GoldApplication.WebAPI.Controllers.UserEventController.DeleteEventUser(System.Int64)">
+            <summary>
+            حذف خرید توسط ادمین
+            </summary>
+            <param name="eventUserId"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
